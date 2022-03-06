@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bNi-PI-fG5">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Player ScoreVC-->
+        <scene sceneID="rU2-nV-BNl">
+            <objects>
+                <viewController id="bNi-PI-fG5" customClass="PlayerScoreVC" customModule="TestingVCCompositionWithStoryboards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t6e-I6-1rQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pGR-Mf-8mJ" userLabel="Root_View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ignasi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibz-4c-MkY" userLabel="Name_Label">
+                                        <rect key="frame" x="10" y="10" width="355" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2211" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYm-hX-wyg" userLabel="Score_Label">
+                                        <rect key="frame" x="10" y="51" width="355" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Ibz-4c-MkY" firstAttribute="top" secondItem="pGR-Mf-8mJ" secondAttribute="top" constant="10" id="52y-rh-ls6"/>
+                                    <constraint firstItem="Ibz-4c-MkY" firstAttribute="leading" secondItem="pGR-Mf-8mJ" secondAttribute="leading" constant="10" id="K6n-fJ-T8b"/>
+                                    <constraint firstItem="Ibz-4c-MkY" firstAttribute="leading" secondItem="kYm-hX-wyg" secondAttribute="leading" id="Nnb-aW-eKc"/>
+                                    <constraint firstAttribute="height" constant="90" id="Nyv-5t-wnr"/>
+                                    <constraint firstAttribute="bottom" secondItem="kYm-hX-wyg" secondAttribute="bottom" constant="10" id="YSd-gE-IIE"/>
+                                    <constraint firstItem="Ibz-4c-MkY" firstAttribute="trailing" secondItem="kYm-hX-wyg" secondAttribute="trailing" id="goJ-3C-Aig"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ibz-4c-MkY" secondAttribute="trailing" constant="10" id="mXK-26-t92"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vEc-06-1Bx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pGR-Mf-8mJ" firstAttribute="leading" secondItem="vEc-06-1Bx" secondAttribute="leading" id="HS3-qJ-0xl"/>
+                            <constraint firstItem="pGR-Mf-8mJ" firstAttribute="top" secondItem="vEc-06-1Bx" secondAttribute="top" id="R5h-li-aN5"/>
+                            <constraint firstItem="vEc-06-1Bx" firstAttribute="trailing" secondItem="pGR-Mf-8mJ" secondAttribute="trailing" id="Vzb-4r-8nF"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="375" height="90"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="Ibz-4c-MkY" id="pFw-64-KFR"/>
+                        <outlet property="scoreLabel" destination="kYm-hX-wyg" id="E0p-Bt-CTg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="82Z-ke-BD1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="43" y="28"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
