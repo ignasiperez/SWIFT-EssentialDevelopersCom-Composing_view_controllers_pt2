@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T78-3n-O3x">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Player ScoreVC-->
+        <scene sceneID="B1h-gr-irO">
+            <objects>
+                <viewController id="T78-3n-O3x" customClass="PlayerScoreVC" customModule="TestingVCCompositionWithStoryboards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zvm-Hq-Lqv" userLabel="Root_View">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4VU-5d-tjz" userLabel="Player2_View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Judith" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vb9-ge-ssy" userLabel="Name_Label">
+                                        <rect key="frame" x="10" y="10" width="355" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1122" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZE4-Hg-aVA" userLabel="Score_Label">
+                                        <rect key="frame" x="10" y="51" width="355" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstItem="vb9-ge-ssy" firstAttribute="top" secondItem="4VU-5d-tjz" secondAttribute="top" constant="10" id="3Qe-OI-3NV"/>
+                                    <constraint firstAttribute="height" constant="90" id="F9d-ag-70X"/>
+                                    <constraint firstAttribute="trailing" secondItem="vb9-ge-ssy" secondAttribute="trailing" constant="10" id="H13-SY-LNf"/>
+                                    <constraint firstItem="vb9-ge-ssy" firstAttribute="leading" secondItem="ZE4-Hg-aVA" secondAttribute="leading" id="Hbc-Bb-qVf"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZE4-Hg-aVA" secondAttribute="bottom" constant="10" id="LaK-qn-8Mu"/>
+                                    <constraint firstItem="vb9-ge-ssy" firstAttribute="trailing" secondItem="ZE4-Hg-aVA" secondAttribute="trailing" id="Obs-Kr-Vd3"/>
+                                    <constraint firstItem="vb9-ge-ssy" firstAttribute="leading" secondItem="4VU-5d-tjz" secondAttribute="leading" constant="10" id="h8j-Nq-7vq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="b89-v6-zcb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4VU-5d-tjz" firstAttribute="leading" secondItem="b89-v6-zcb" secondAttribute="leading" id="f7o-pL-3SR"/>
+                            <constraint firstItem="b89-v6-zcb" firstAttribute="trailing" secondItem="4VU-5d-tjz" secondAttribute="trailing" id="ti5-fP-vyb"/>
+                            <constraint firstItem="4VU-5d-tjz" firstAttribute="top" secondItem="b89-v6-zcb" secondAttribute="top" id="w2S-GI-vLC"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="375" height="90"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="vb9-ge-ssy" id="d9a-vW-VVJ"/>
+                        <outlet property="scoreLabel" destination="ZE4-Hg-aVA" id="S7d-t6-PUC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mtW-Ur-02n" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="43" y="28"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
